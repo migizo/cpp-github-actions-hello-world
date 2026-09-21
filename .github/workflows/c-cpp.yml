@@ -16,7 +16,7 @@ jobs:
     - name: Show Context
       env:
         GITHUB_JSON: ${{ toJson(github) }}
-      run: echo "{GITHUB_JSON}"
+      run: echo "${GITHUB_JSON}"
     - name: make
       run: make
     - name: make run
